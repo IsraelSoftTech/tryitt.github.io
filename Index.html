@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Izzy Tech Team</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body onload="slider()">
+    
+   <div id="spinner-container">
+    <img id="spinner-image" src="images/spin.png" alt="">
+   </div>
+        <header class="header">
+           
+            
+        <a href="#home" class="logo">IZZY<span>TECH TEAM</span></a>
+        <div class="logo-img">
+            <img src="images/logo.png" alt="">
+        </div>
+        <div class="header-info">
+            <div class="contact-info">
+                <i class= 'bx bx-phone'></i>
+
+                +2376756443
+
+            </div>
+            <div class="contact-info">
+                <i class='bx bx-envelope'></i>
+                iminuifuong@gmail.com
+            </div>
+            <div class="contact-info">
+                <i class='bx bx-map'></i>
+                Bamenda, Cameroon
+            </div>
+        </div>
+      
+    </header>
+
+       
+    
+    <div class="banner">
+        <div class="slider">
+            <img src="images/graphic.png" id="slideImg">
+        </div>
+        <div class="overlay">
+           
+           
+               
+<input type="checkbox" id="check">
+<label for="check">
+   <img src="images/menu icon.png" class="btn">
+   <img src="images/close.png" class="cancel">
+
+</label>
+
+                <div class="slidebar">
+                    <header>
+                        <img src="images/logo.png" alt="">
+                    </header>
+                    <ul>
+                        <li><a href="#home"><i class='bx bx-home' id="home-icon"></i>Home</a></li>
+                        <li><a href="#about"><i class='bx bx-info-circle' id="about-icon"></i>About us</a></li>
+                        <li><a href="Services.html"><i class='bx bx-package' id="services-icon"></i>Services</a></li>
+                        <li><a href="#"><i class='bx bx-shopping-bag' id="buy-icon"></i>Buy</a></li>
+                        <li><a href="#"><i class='bx bx-command' id="command-icon"></i>Command</a></li>
+                        <li><a href="#"><i class='bx bx-book-open' id="online-training-icon"></i>Online Training</a></li>
+                        <li><a href="#"><i class='bx bx-book' id="portfolio-icon"></i>Portfolio</a></li>
+                        <li><a href="#"><i class='bx bx-phone' id="call-icon"></i>Contact Us</a></li>
+                        
+                    </ul>
+                </div>
+
+                <main>
+                    <!--Home Section-->
+                    <section id="home" class="home">
+                        <div class="content">
+                            <h1>IZZY TECH TEAM, BRINGING THE CHANGE</h1>
+                            <h3>Meet our competent Team today and enjoy our quality services in Tech.Meet our competent Team today and enjoy our quality services in Tech
+                                Meet our competent Team today and enjoy our quality services in Tech.Meet our competent Team today and enjoy our quality services in Tech
+                            </h3>
+                        </div>
+        
+                        <div>
+                      <div class="button-container">
+                            <button type="button">Hire Us</button>
+                            <a href="Services.html">
+                            <button type="button" class="btn-2">Buy</button>
+                        </a>
+                        </div>
+                        </div>
+                    </div>
+                </div>        
+                    </section>
+
+                   
+
+
+
+                    <!--Services Section-->
+                 
+
+               
+          
+
+         
+              
+            
+        
+            
+           
+                </main>
+    <script>
+        var slideImg = document.getElementById("slideImg");
+        var images = new Array(
+            "images/graphic.png",
+            "images/ai.png",
+            "images/abt.png",
+            "images/lap 2 front.png",
+            "images/lap 2 back.png",
+            "images/lap 1 back.png",
+            "images/hardware.png",
+            "images/about.png",
+            "images/programming.png",
+            "images/cloud.png",
+            "images/mobile.png",
+            "images/printing.png",
+            "images/software.png",
+            "images/contact.png",
+            "images/web.png"
+        )
+     
+        var len = images.length;
+        var i = 0;
+
+        function slider(){
+            if(i > len-1){
+                i = 0;
+            }
+            slideImg.src = images[i];
+            i++;
+            setTimeout('slider()',3000);
+        }
+        document.addEventListener('DOMContentLoaded',function()
+    {
+        var spinnerContainer = document.getElementById('spinner-container');
+        spinnerContainer.addEventListener('animationend',function()
+        {
+            spinnerContainer.remove();
+        });
+    });
+
+
+  
+
+
+        
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
